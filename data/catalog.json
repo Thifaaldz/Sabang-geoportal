@@ -1,0 +1,8523 @@
+{
+ "ADMINISTRASIKECAMATAN_AR_50K": {
+  "id": "ADMINISTRASIKECAMATAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "KDPPUM",
+    "type": "str",
+    "size": 2
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KDPBPS",
+    "type": "str",
+    "size": 2
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LUASWH",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "UUPP",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDEBPS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDEPUM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDCBPS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDCPUM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDBBPS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDBPUM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMPR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADPR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPADM",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "BA0080",
+   "METADATA": "ADMINISTRASIKECAMATAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 6,
+  "user_count": 0
+ },
+ "ADMINISTRASI_LN_50K": {
+  "id": "ADMINISTRASI_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "KARKTR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STSBTS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KELAS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "UUPP",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LOKASI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "ADMIN1",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "ADMIN2",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAKLD1",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAKLD2",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADKC1",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADKC2",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAKBK1",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAKBK2",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAPRO1",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WAPRO2",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPTBT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PJGBTS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KLBADM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPLOK",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "BA0040",
+   "METADATA": "ADMINISTRASI_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "ADMINLAUT_AR_50K": {
+  "id": "ADMINLAUT_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KDEPUM",
+    "type": "str",
+    "size": 5
+   },
+   {
+    "name": "KDCPUM",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "KDBPUM",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "KDPPUM",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPBDR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMPR",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "ADMINLAUT_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "AGRIKEBUN_AR_50K": {
+  "id": "AGRIKEBUN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSKBN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "FA0020",
+   "METADATA": "AGRIKEBUN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 16,
+  "user_count": 0
+ },
+ "AGRILADANG_AR_50K": {
+  "id": "AGRILADANG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSLDG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TNMLDG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPLDG",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "FA0040",
+   "METADATA": "AGRILADANG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 31,
+  "user_count": 0
+ },
+ "AGRISAWAH_AR_50K": {
+  "id": "AGRISAWAH_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSSWH",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TNMSWH",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "FA0060",
+   "METADATA": "AGRISAWAH_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 2,
+  "user_count": 0
+ },
+ "AGRITANAMCAMPUR_AR_50K": {
+  "id": "AGRITANAMCAMPUR_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSSWH",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "AGRITANAMCAMPUR_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "AIRPORT_AR_50K": {
+  "id": "AIRPORT_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KOBDMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDICAO",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDIATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LGTBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KATBMI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSBMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADABMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADRBMI",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPAIP",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPLOK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "RUNWAY",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "PARK",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LPG",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "CC0080",
+   "METADATA": "AIRPORT_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "AIRPORT_PT_50K": {
+  "id": "AIRPORT_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "KOBDMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDICAO",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDIATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LGTBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KLSBMI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ADABMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADRBMI",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPAIP",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPLOK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KATKBM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "AIRPORT_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "AIRTERJUN_PT_50K": {
+  "id": "AIRTERJUN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "AIRTERJUN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "ANTSTASIUNBUMIK_PT_50K": {
+  "id": "ANTSTASIUNBUMIK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "ANTSTASIUNBUMIK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "ARENAOLAHRAGA_AR_50K": {
+  "id": "ARENAOLAHRAGA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "ARENAOLAHRAGA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "ARENAOLAHRAGA_PT_50K": {
+  "id": "ARENAOLAHRAGA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "ARENAOLAHRAGA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BANGUNAN_AR_50K": {
+  "id": "BANGUNAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GA0020",
+   "METADATA": "BANGUNAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 40,
+  "user_count": 0
+ },
+ "BANGUNAN_PT_50K": {
+  "id": "BANGUNAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GA0020",
+   "METADATA": "BANGUNAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 221,
+  "user_count": 0
+ },
+ "BATUKARANG_AR_50K": {
+  "id": "BATUKARANG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KATBKR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "BATUKARANG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BATUKARANG_LN_50K": {
+  "id": "BATUKARANG_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KATBKR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "BATUKARANG_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BENDUNGAN_PT_50K": {
+  "id": "BENDUNGAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FBD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "POBD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "VOLAIR",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "BENDUNGAN_PT_50K"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BENDUNG_AR_50K": {
+  "id": "BENDUNG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "BENDUNG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BENDUNG_LN_50K": {
+  "id": "BENDUNG_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "BENDUNG_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BENDUNG_PT_50K": {
+  "id": "BENDUNG_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "BENDUNG_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BETING_AR_50K": {
+  "id": "BETING_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "BETING_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "BETING_LN_50K": {
+  "id": "BETING_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "BETING_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "CAGARBUDAYA_AR_50K": {
+  "id": "CAGARBUDAYA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPCBD",
+    "type": "str",
+    "size": 2
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "CAGARBUDAYA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "CAGARBUDAYA_PT_50K": {
+  "id": "CAGARBUDAYA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "CAGARBUDAYA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DANAU_AR_50K": {
+  "id": "DANAU_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OTODAN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "VOLTAP",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DTA",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "SEDIMN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "VLCSDN",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "QUAAR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "CRH",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KPTS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "NAMWS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMDAS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LOKASI",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "DA0080",
+   "METADATA": "DANAU_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 2,
+  "user_count": 0
+ },
+ "DEPOGAS_PT_50K": {
+  "id": "DEPOGAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "DEPOGAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DEPOKA_PT_50K": {
+  "id": "DEPOKA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NODEPO",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "DEPOKA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DEPOMINYAK_AR_50K": {
+  "id": "DEPOMINYAK_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "DEPOMINYAK_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DEPOMINYAK_PT_50K": {
+  "id": "DEPOMINYAK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "DEPOMINYAK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DERMAGA_AR_50K": {
+  "id": "DERMAGA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PMLDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OPRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LGTDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LBRDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KDLDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KSTDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "STRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSDRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "DERMAGA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DERMAGA_LN_50K": {
+  "id": "DERMAGA_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PMLDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OPRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LGTDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LBRDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KDLDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KSTDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "STRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSDRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "DERMAGA_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "DERMAGA_PT_50K": {
+  "id": "DERMAGA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PMLDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OPRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LGTDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LBRDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KDLDRM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KSTDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "STRDRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSDRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "DERMAGA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "EMPANG_AR_50K": {
+  "id": "EMPANG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "EMPANG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GARAM_AR_50K": {
+  "id": "GARAM_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "GARAM_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GARDULISTRIK_PT_50K": {
+  "id": "GARDULISTRIK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JGLGRL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "GARDULISTRIK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GARDUTELPON_PT_50K": {
+  "id": "GARDUTELPON_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "GARDUTELPON_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GARISRPANTAI_LN_50K": {
+  "id": "GARISRPANTAI_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DTMVER",
+    "type": "str",
+    "size": 80
+   },
+   {
+    "name": "KARGPN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KODGPN",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPGPN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "GARISRPANTAI_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 5,
+  "user_count": 0
+ },
+ "GENLISTRIK_AR_50K": {
+  "id": "GENLISTRIK_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPLS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "GENLISTRIK_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GENLISTRIK_PT_50K": {
+  "id": "GENLISTRIK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPLS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DAYA",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "GENLISTRIK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "GORONG_PT_50K": {
+  "id": "GORONG_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "GORONG_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "HANKAM_PT_50K": {
+  "id": "HANKAM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FUNBHM",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "HANKAM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "HELIPORT_AR_50K": {
+  "id": "HELIPORT_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KOBDMI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDICAO",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDIATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LGTHEC",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KATBMI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSHEC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADMHEC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADRHEC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "HELIPORT_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "HIDRANUMUM_PT_50K": {
+  "id": "HIDRANUMUM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "KAPSTS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DEBIT",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "HIDRANUMUM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "INDUSTRI_AR_50K": {
+  "id": "INDUSTRI_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KLSBBK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSTKI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSPRD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSBMT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSLOK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSPRO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSKOM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSMOD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSJNS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "INDUSTRI_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "INDUSTRI_PT_50K": {
+  "id": "INDUSTRI_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KLSBBK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSTKI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSPRD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSBMT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSLOK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSPRO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSKOM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSMOD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSJNS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "INDUSTRI_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "IRIGASI_LN_50K": {
+  "id": "IRIGASI_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "IRIGASI_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "JALAN_LN_50K": {
+  "id": "JALAN_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMRJL",
+    "type": "str",
+    "size": 128
+   },
+   {
+    "name": "KONRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "MATRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGSRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "UTKRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TOLRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "WLYRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AUTRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SPCRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JPARJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ARHRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STARJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLLRJL",
+    "type": "str",
+    "size": 80
+   },
+   {
+    "name": "MEDRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LOCRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JARRJL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "CA0080",
+   "METADATA": "JALAN_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 261,
+  "user_count": 0
+ },
+ "JEMBATAN_LN_50K": {
+  "id": "JEMBATAN_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGSJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TONJMB",
+    "type": "int",
+    "size": 4
+   },
+   {
+    "name": "TGGJMB",
+    "type": "int",
+    "size": 4
+   },
+   {
+    "name": "JBTJMB",
+    "type": "int",
+    "size": 4
+   },
+   {
+    "name": "LBRJMB",
+    "type": "int",
+    "size": 4
+   },
+   {
+    "name": "MATJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STRJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "DEKJMB",
+    "type": "int",
+    "size": 4
+   },
+   {
+    "name": "BTSJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AYUJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "JEMBATAN_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "JEMBATAN_PT_50K": {
+  "id": "JEMBATAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGSJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TONJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TGGJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LBRJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "MATJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STRJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "DEKJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "BTSJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AYUJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JBTJMB",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "CA0100",
+   "METADATA": "JEMBATAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 141,
+  "user_count": 0
+ },
+ "KABELLISTRIK_LN_50K": {
+  "id": "KABELLISTRIK_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DAYA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KABELLISTRIK_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANAL_LN_50K": {
+  "id": "KANAL_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANAL_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORAIRMINUM_PT_50K": {
+  "id": "KANTORAIRMINUM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "LCODE": "HA0100",
+   "METADATA": "KANTORAIRMINUM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 3,
+  "user_count": 0
+ },
+ "KANTORGAS_PT_50K": {
+  "id": "KANTORGAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORGAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORKIRIMPAKET_PT_50K": {
+  "id": "KANTORKIRIMPAKET_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORKIRIMPAKET_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORPLN_AR_50K": {
+  "id": "KANTORPLN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORPLN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORPLN_PT_50K": {
+  "id": "KANTORPLN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORPLN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORPOS_AR_50K": {
+  "id": "KANTORPOS_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNKPOS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORPOS_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORPOS_PT_50K": {
+  "id": "KANTORPOS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNKPOS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "LCODE": "HC0080",
+   "METADATA": "KANTORPOS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "KANTORSTASKOMBUMI_PT_50K": {
+  "id": "KANTORSTASKOMBUMI_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORSTASKOMBUMI_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KANTORTELPON_PT_50K": {
+  "id": "KANTORTELPON_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "KANTORTELPON_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KELOLALIMBAH_PT_50K": {
+  "id": "KELOLALIMBAH_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JPLTPL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "KELOLALIMBAH_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KESEHATAN_AR_50K": {
+  "id": "KESEHATAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPSHT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FKSADD",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "KESEHATAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KESEHATAN_PT_50K": {
+  "id": "KESEHATAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPSHT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FSKADD",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "KESEHATAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KOLAM_AR_50K": {
+  "id": "KOLAM_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LKOLAM",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSKLM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "OTODAN",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "KOLAM_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "KONTUR_LN_50K": {
+  "id": "KONTUR_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "VALKNT",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "TIPKNT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "IDXKNT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSKNT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "EA0200",
+   "METADATA": "KONTUR_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 211,
+  "user_count": 0
+ },
+ "LAGUNA_AR_50K": {
+  "id": "LAGUNA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "LAGUNA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "LAYANANKESEHATAN_AR_50K": {
+  "id": "LAYANANKESEHATAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LKALMT",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TPLYST",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "LAYANANKESEHATAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "LAYANANKESEHATAN_PT_50K": {
+  "id": "LAYANANKESEHATAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LKALMT",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TPLYST",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "GI0020",
+   "METADATA": "LAYANANKESEHATAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 7,
+  "user_count": 0
+ },
+ "LIGHT_PT_50K": {
+  "id": "LIGHT_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "TIPLYN",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "IDLLYN",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FRQRUD",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KNLVOR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "HOSRUD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TYPLIH",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "CHTLCC",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "LIGHT_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MAKAM_AR_50K": {
+  "id": "MAKAM_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TPMKM",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "MAKAM_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MAKAM_PT_50K": {
+  "id": "MAKAM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TPMKM",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "MAKAM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MENARAAIRMINUM_PT_50K": {
+  "id": "MENARAAIRMINUM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "MENARAAIRMINUM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MENARAEKSPLOITMINYAK_PT_50K": {
+  "id": "MENARAEKSPLOITMINYAK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "MENARAEKSPLOITMINYAK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MENARALISTRIK_PT_50K": {
+  "id": "MENARALISTRIK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "MENARALISTRIK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "MENARATELPON_PT_50K": {
+  "id": "MENARATELPON_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "MENARATELPON_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "NIAGA_AR_50K": {
+  "id": "NIAGA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FUNGSI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FGSKOD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSPSR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSTKO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSKTR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PRSTRP",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "NIAGA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "NIAGA_PT_50K": {
+  "id": "NIAGA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FUNGSI",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FGSKOD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSPSR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSTKO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSKTR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PRSTRP",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "GB0040",
+   "METADATA": "NIAGA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 5,
+  "user_count": 0
+ },
+ "NONAGRIALANG_AR_50K": {
+  "id": "NONAGRIALANG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KLSRMP",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KODATC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPDG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "NONAGRIALANG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "NONAGRIHUTANBASAH_AR_50K": {
+  "id": "NONAGRIHUTANBASAH_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPHN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSHTN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KRPPHN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "KLSLCO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KRAPAT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SPSABS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "RPTHTN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSHTB",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "NONAGRIHUTANBASAH_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "NONAGRIHUTANKERING_AR_50K": {
+  "id": "NONAGRIHUTANKERING_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPHN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSHTN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KRPPHN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "KLSLCO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TKTHTN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPHTN",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "FC0040",
+   "METADATA": "NONAGRIHUTANKERING_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "NONAGRISEMAKBELUKAR_AR_50K": {
+  "id": "NONAGRISEMAKBELUKAR_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "AQDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "PUDATE",
+    "type": "str",
+    "size": 8
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSSMK",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "FB0040",
+   "METADATA": "NONAGRISEMAKBELUKAR_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 34,
+  "user_count": 0
+ },
+ "OLAHAIRMINUM_PT_50K": {
+  "id": "OLAHAIRMINUM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "OLAHAIRMINUM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "OLAHGAS_PT_50K": {
+  "id": "OLAHGAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "OLAHGAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "OLAHMINYAK_PT_50K": {
+  "id": "OLAHMINYAK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "OLAHMINYAK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PANCARRADIO_PT_50K": {
+  "id": "PANCARRADIO_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 80
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TGGPNC",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "PANCARRADIO_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PANCARTV_PT_50K": {
+  "id": "PANCARTV_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TGGPNC",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "PANCARTV_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PELABUHAN_AR_50K": {
+  "id": "PELABUHAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ADMPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KODPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KLSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STATUS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KONKON",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PJAPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LAMPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KMXPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KMNPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "STPPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRPPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ALJPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DEEPAR",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "CB0140",
+   "METADATA": "PELABUHAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 3,
+  "user_count": 0
+ },
+ "PELABUHAN_PT_50K": {
+  "id": "PELABUHAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ADMPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PJAPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "LAMPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "STUPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KONKON",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KMXPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KMNPEL",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "STPPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRPPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ALJPEL",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KLSPEL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KODPEL",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "PELABUHAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PEMERINTAHAN_AR_50K": {
+  "id": "PEMERINTAHAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSGOV",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "PEMERINTAHAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PEMERINTAHAN_PT_50K": {
+  "id": "PEMERINTAHAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSGOV",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GD0020",
+   "METADATA": "PEMERINTAHAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 98,
+  "user_count": 0
+ },
+ "PEMERINTAHASING_PT_50K": {
+  "id": "PEMERINTAHASING_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "FUNBPA",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "PEMERINTAHASING_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PEMUKIMAN_AR_50K": {
+  "id": "PEMUKIMAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GA0040",
+   "METADATA": "PEMUKIMAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 87,
+  "user_count": 0
+ },
+ "PENDIDIKAN_AR_50K": {
+  "id": "PENDIDIKAN_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KATPDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JLPDDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGDPDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSPDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JJGPDF",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "PENDIDIKAN_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PENDIDIKAN_PT_50K": {
+  "id": "PENDIDIKAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KATPDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JLPDDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FGGPDK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JJGPDF",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JNSPDL",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "GE0020",
+   "METADATA": "PENDIDIKAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 51,
+  "user_count": 0
+ },
+ "PILARBATAS_PT_50K": {
+  "id": "PILARBATAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "IDENTF",
+    "type": "str",
+    "size": 80
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "METUKR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "AKURAH",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KARKTR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "MONUMN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPHPT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LOKASI",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "AKURAV",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSPLR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KLBADM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "BB0160",
+   "METADATA": "PILARBATAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "PIPAHIDROKARBON_LN_50K": {
+  "id": "PIPAHIDROKARBON_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "DIMMTR",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "TIPHCO",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "PIPAHIDROKARBON_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PIPAMINYAK_LN_50K": {
+  "id": "PIPAMINYAK_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "PIPAMINYAK_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PUSKESMAS_AR_50K": {
+  "id": "PUSKESMAS_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KWKPKM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JPLPKM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PKMKODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PKMKAT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PKMLMT",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KMPPKM",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "PUSKESMAS_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "PUSKESMAS_PT_50K": {
+  "id": "PUSKESMAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KWKPKM_",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KMPPKM_",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JPLPKM_",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PKMKODE_",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PKMKAT_",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PKMLMT_",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GI0020",
+   "METADATA": "PUSKESMAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 13,
+  "user_count": 0
+ },
+ "RAWA_AR_50K": {
+  "id": "RAWA_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TPRAWA",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TPGNGN",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TPAIR",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "RAWA_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RELKA_LN_50K": {
+  "id": "RELKA_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPREL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JMLREL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KMXREL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSREL",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RELKA_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RUMAHSAKIT_AR_50K": {
+  "id": "RUMAHSAKIT_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPRST",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JPLYRS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ALAMAT",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RUMAHSAKIT_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RUMAHSAKIT_PT_50K": {
+  "id": "RUMAHSAKIT_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPRST",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JPLYRS",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "ALAMAT",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RUMAHSAKIT_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RUNWAY_AR_50K": {
+  "id": "RUNWAY_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PCNHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SLPHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMSWY",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "CWYHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSTR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OFZHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPRWY",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RUNWAY_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RUNWAY_LN_50K": {
+  "id": "RUNWAY_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARHSF",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "MAVHSF",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "DIMHSF",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "PCNHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SLPHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "CWYHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSWY",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSTR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OFZHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPRWY",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RUNWAY_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "RUNWAY_PT_50K": {
+  "id": "RUNWAY_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PCNHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SLPHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMSWY",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "CWYHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSTR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OFZHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPRWY",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "RUNWAY_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SALURANAIR_LN_50K": {
+  "id": "SALURANAIR_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSALR",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "SALURANAIR_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SARANAIBADAH_AR_50K": {
+  "id": "SARANAIBADAH_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FGSIBD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "SARANAIBADAH_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SARANAIBADAH_PT_50K": {
+  "id": "SARANAIBADAH_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FGSIBD",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GF0020",
+   "METADATA": "SARANAIBADAH_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 82,
+  "user_count": 0
+ },
+ "SARANATELKOM_PT_50K": {
+  "id": "SARANATELKOM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSSTK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "SARANATELKOM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SOSIAL_PT_50K": {
+  "id": "SOSIAL_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "SOSIAL_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SPBU_PT_50K": {
+  "id": "SPBU_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "SPBU_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SPOTHEIGHT_PT_50K": {
+  "id": "SPOTHEIGHT_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "EA0240",
+   "METADATA": "SPOTHEIGHT_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 69,
+  "user_count": 0
+ },
+ "STASIUNKA_PT_50K": {
+  "id": "STASIUNKA_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FGSSTA",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSSTA",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KODKOD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WILSTA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DOPSTA",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "KMTSTA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LINSTA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KONKON",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "STASIUNKA_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "STASIUNPASUT_PT_50K": {
+  "id": "STASIUNPASUT_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "IDENTF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPALT",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "OCENEA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LOKASI",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "STASIUNPASUT_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "STASIUNRADIO_PT_50K": {
+  "id": "STASIUNRADIO_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "LCODE": "HC0220",
+   "METADATA": "STASIUNRADIO_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 1,
+  "user_count": 0
+ },
+ "STASIUNTV_PT_50K": {
+  "id": "STASIUNTV_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "LCODE": "HC0240",
+   "METADATA": "STASIUNTV_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 2,
+  "user_count": 0
+ },
+ "SUMBERAIRMINUM_PT_50K": {
+  "id": "SUMBERAIRMINUM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "SUMBERAIRMINUM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SUMURGAS_PT_50K": {
+  "id": "SUMURGAS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "SUMURGAS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SUMURMINYAK_PT_50K": {
+  "id": "SUMURMINYAK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "SUMURMINYAK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SUNGAI_AR_50K": {
+  "id": "SUNGAI_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSSNG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSSNG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMWS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMDAS",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "SUNGAI_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "SUNGAI_LN_50K": {
+  "id": "SUNGAI_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPSNG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KLSSNG",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 254
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMWS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMDAS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "STATUS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WMAX",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DBTMAX",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "SLPRT",
+    "type": "float",
+    "size": 19
+   }
+  ],
+  "defaults": {
+   "METADATA": "SUNGAI_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 214,
+  "user_count": 0
+ },
+ "TAMBAK_AR_50K": {
+  "id": "TAMBAK_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KODLCO",
+    "type": "str",
+    "size": 20
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KDTTBK",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "PNGTBK",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "LCODE": "DA0380",
+   "METADATA": "TAMBAK_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 13,
+  "user_count": 0
+ },
+ "TAMBANGAN_LN_50K": {
+  "id": "TAMBANGAN_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TAMBANGAN_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TAMBANGAN_PT_50K": {
+  "id": "TAMBANGAN_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TAMBANGAN_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TANGGUL_AR_50K": {
+  "id": "TANGGUL_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TANGGUL_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TANGGUL_PT_50K": {
+  "id": "TANGGUL_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TANGGUL_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TAXIWY_AR_50K": {
+  "id": "TAXIWY_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PCNHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SLPHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMSWY",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "CWYHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSTR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OFZHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "TAXIWY_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TAXIWY_PT_50K": {
+  "id": "TAXIWY_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "MAVBMI",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PCNHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SLPHSF",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "DIMSWY",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "CWYHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "DIMSTR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "OFZHSF",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "TAXIWY_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TEMPATSAMPAHAKHIR_AR_50K": {
+  "id": "TEMPATSAMPAHAKHIR_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TEMPATSAMPAHAKHIR_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TEMPATSAMPAHAKHIR_PT_50K": {
+  "id": "TEMPATSAMPAHAKHIR_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TEMPATSAMPAHAKHIR_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TERMINALBUS_PT_50K": {
+  "id": "TERMINALBUS_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KODTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "MGTTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "STATRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KATTRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "TIPTRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "THBTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "THOTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "THSTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KONKON",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "JLBTRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KEBTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JLDTRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KEDTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "PARTRM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KEPTRM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "TERMINALBUS_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TEROWONG_PT_50K": {
+  "id": "TEROWONG_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LENTRW",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JLJTRW",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "TIPTRW",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "TEROWONG_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TERUMBUKARANG_AR_50K": {
+  "id": "TERUMBUKARANG_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TERUMBUKARANG_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TERUMBUKARANG_LN_50K": {
+  "id": "TERUMBUKARANG_LN_50K",
+  "geom": "LineString",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TERUMBUKARANG_LN_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TIANGLISTRIK_PT_50K": {
+  "id": "TIANGLISTRIK_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TIANGLISTRIK_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TITIKDEM_PT_50K": {
+  "id": "TITIKDEM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ELEVAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "TIPDEM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "KODLIN",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KODBJR",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "METADATA": "TITIKDEM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TONGGAKKM_PT_50K": {
+  "id": "TONGGAKKM_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 250
+   }
+  ],
+  "defaults": {
+   "METADATA": "TONGGAKKM_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ },
+ "TOPONIMI_PT_50K": {
+  "id": "TOPONIMI_PT_50K",
+  "geom": "Point",
+  "fields": [
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "ALIAS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LOKTPN",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "KLSTPN",
+    "type": "str",
+    "size": 150
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FTYPE",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "LAT",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LON",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KOORDY",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KOORDX",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "KOORDINAT1",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "KORDINTAT2",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LUAS",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "Elevasi",
+    "type": "float",
+    "size": 19
+   },
+   {
+    "name": "NAMLOK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMSPE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMMAP",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "NAMGAZ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "SJHNAM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ARTINAM",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "ASLBHS",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKD",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKC",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMKK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADKK",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WADMPR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "WIADPR",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "TIPADM",
+    "type": "int",
+    "size": 9
+   },
+   {
+    "name": "STATUS",
+    "type": "str",
+    "size": 50
+   }
+  ],
+  "defaults": {
+   "LCODE": "GA0040",
+   "METADATA": "TOPONIMI_PT_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 226,
+  "user_count": 0
+ },
+ "WADUK_AR_50K": {
+  "id": "WADUK_AR_50K",
+  "geom": "Polygon",
+  "fields": [
+   {
+    "name": "NAMOBJ",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "FCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "REMARK",
+    "type": "str",
+    "size": 250
+   },
+   {
+    "name": "SRS_ID",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "LCODE",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "METADATA",
+    "type": "str",
+    "size": 50
+   },
+   {
+    "name": "JNSWDK",
+    "type": "int",
+    "size": 9
+   }
+  ],
+  "defaults": {
+   "METADATA": "WADUK_AR_50K",
+   "SRS_ID": "WGS 84"
+  },
+  "rbi_count": 0,
+  "user_count": 0
+ }
+}
