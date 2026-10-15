@@ -8,13 +8,14 @@ from datetime import datetime
 
 import pandas as pd
 from pyproj import Geod
+from shapely import STRtree
 from shapely.geometry import MultiPolygon, Point, mapping, shape
 from shapely.prepared import prep
 from shapely.validation import make_valid
 
 from config import (
     AUTO_FIELDS, CATALOG_PATH, CUSTOM_LAYERS, DESA_PATH, FIELD_ALIASES, GEOM_LABEL, LAYER_COLORS, LAYER_DIR,
-    LAYER_ICONS, RBI_SOURCE, SYSTEM_FIELDS, THEME_COLORS, THEME_ICONS, THEMES, TITLES,
+    LAYER_ICONS, PULAU_PATH, RBI_SOURCE, SYSTEM_FIELDS, THEME_COLORS, THEME_ICONS, THEMES, TITLES,
 )
 
 GEOD = Geod(ellps="WGS84")
@@ -91,7 +92,31 @@ def load_desa():
     for i, feat in enumerate(fc["features"], start=1):
         feat["id"] = i
         feat["properties"]["LUASWH"] = round(feat["properties"]["LUASWH"], 2)
+        feat["properties"]["PULAU"], feat["properties"]["WILAYAH"] = pulau_of(shape(feat["geometry"]))
     return fc
+
+
+# ------------------------------------------------------- pulau Kawasan Sabang
+def load_pulau():
+    if not PULAU_PATH.exists():
+        return {"type": "FeatureCollection", "features": []}
+    with open(PULAU_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+_PULAU_INDEX = {}
+
+
+def pulau_of(geom):
+    """(pulau, wilayah) terdekat dari geometri; (None, None) bila pulau.geojson belum dibuat."""
+    mtime = PULAU_PATH.stat().st_mtime if PULAU_PATH.exists() else None
+    if _PULAU_INDEX.get("mtime") != mtime or "tree" not in _PULAU_INDEX:
+        feats = load_pulau()["features"]
+        _PULAU_INDEX.update(mtime=mtime, items=[(f["properties"]["PULAU"], f["properties"]["WILAYAH"]) for f in feats],
+                            tree=STRtree([shape(f["geometry"]) for f in feats]) if feats else None)
+    if _PULAU_INDEX["tree"] is None or geom.is_empty:
+        return None, None
+    return _PULAU_INDEX["items"][int(_PULAU_INDEX["tree"].nearest(geom.representative_point()))]
 
 
 # ------------------------------------------------------------------- layer
@@ -182,7 +207,8 @@ def add_features(layer, geometries, props, user="anonim"):
         if geom is None or geom.is_empty:
             continue
         p = normalize_properties(layer, props)
-        p.update(objectid=next_id, **measure(layer, geom), created_by=user or "anonim", created_at=now_iso(), updated_at=now_iso())
+        pulau, wilayah = pulau_of(geom)
+        p.update(objectid=next_id, PULAU=pulau, WILAYAH=wilayah, **measure(layer, geom), created_by=user or "anonim", created_at=now_iso(), updated_at=now_iso())
         fc["features"].append({"type": "Feature", "id": next_id, "geometry": mapping(geom), "properties": p})
         next_id += 1
         added += 1

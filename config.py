@@ -13,7 +13,9 @@ BASE_DIR = Path(__file__).parent
 DESA_PATH = BASE_DIR / "sabang.geojson"
 LAYER_DIR = BASE_DIR / "data" / "layers"
 RBI_DIR = BASE_DIR / "shp dataset" / "KAB_SABANG" / "KAB_SABANG"
+RBI_DIR_ACEH_BESAR = BASE_DIR / "shp dataset" / "KAB_SABANG" / "KAB_ACEH_BESAR" / "KAB_ACEH_BESAR" / "KAB_ACEH_BESAR"
 CATALOG_PATH = BASE_DIR / "data" / "catalog.json"
+PULAU_PATH = BASE_DIR / "data" / "pulau.geojson"
 RBI_SOURCE = "RBI 1:50.000 (BIG)"
 
 APP_TITLE = "Geoportal Sabang"
@@ -24,9 +26,57 @@ THEME_BG = "#0f2345"
 THEME_ACCENT = "#d29c2a"
 SELECTION_COLOR = "#00FFFF"  # widget Select: selectionColor
 
-HOME_BOUNDS = [[5.75, 95.01], [6.077, 95.378]]
-HOME_CENTER = [5.86, 95.30]
-HOME_ZOOM = 12
+# Extent awal mencakup seluruh Kawasan Sabang (Pulau Weh s.d. Pulau Rondo dan pulau-pulau Pulo Aceh)
+HOME_BOUNDS = [[5.545, 94.96], [6.08, 95.38]]
+HOME_CENTER = [5.81, 95.17]
+HOME_ZOOM = 11
+
+# ------------------------------------------------------------- Kawasan Sabang
+# PP 83/2010: Kawasan Sabang = Kota Sabang + sebagian Kab. Aceh Besar (pulau-pulau Pulo Aceh).
+# Data RBI Aceh Besar hanya diambil pada pulau-pulau di bawah ini (dipotong oleh convert_rbi.py).
+WILAYAH_SABANG = "Kota Sabang"
+WILAYAH_PULO_ACEH = "Pulo Aceh (Aceh Besar)"
+WILAYAH_COLORS = {WILAYAH_SABANG: "#2a78d6", WILAYAH_PULO_ACEH: "#eb6834"}
+
+# Pulau → (wilayah, catatan). Urutan = urutan tampil di filter/legenda.
+PULAU_KAWASAN = {
+    "Weh": (WILAYAH_SABANG, "Pulau utama, semua permukiman dan pelabuhan"),
+    "Klah": (WILAYAH_SABANG, "Pulau kecil"),
+    "Rubiah": (WILAYAH_SABANG, "Pulau kecil, lokasi wisata selam"),
+    "Seulako": (WILAYAH_SABANG, "Pulau kecil"),
+    "Rondo": (WILAYAH_SABANG, "±42 ha, pulau terluar, berbatasan dengan ZEE"),
+    "Breuh": (WILAYAH_PULO_ACEH, "Berpenghuni, bergunung, puncak ±600 mdpl"),
+    "Nasi": (WILAYAH_PULO_ACEH, "Berpenghuni, puncak ±300 mdpl"),
+    "Teunom": (WILAYAH_PULO_ACEH, "RBI: 'Pulau Nasi Kecil' (gampong Teunom, Gle Keureuse)"),
+    "Bunta": (WILAYAH_PULO_ACEH, "Tidak berpenghuni (RBI: Kec. Peukan Bada)"),
+    "Tuan Diapit": (WILAYAH_PULO_ACEH, "Tidak berpenghuni (RBI: Kec. Peukan Bada)"),
+    "U": (WILAYAH_PULO_ACEH, "Tidak berpenghuni"),
+    "Geupon": (WILAYAH_PULO_ACEH, "Tidak berpenghuni"),
+    "Sidom": (WILAYAH_PULO_ACEH, "Tidak berpenghuni"),
+    "Jroeng": (WILAYAH_PULO_ACEH, "Tidak berpenghuni"),
+    "Tangkora": (WILAYAH_PULO_ACEH, "Tidak berpenghuni"),
+    "Pulau kecil lain (Pulo Aceh)": (WILAYAH_PULO_ACEH, "Benggala, Bole, Guasarang, Kelapa, dan pulau tak bernama"),
+}
+
+# Nama toponimi RBI → pulau (dipakai convert_rbi.py untuk memberi nama poligon pulau)
+TOPONIM_PULAU = {
+    "Pulau Weh": "Weh", "Pulau Klah": "Klah", "Pulau Rubiah": "Rubiah", "Pulau Seulako": "Seulako",
+    "Pulau Rondo": "Rondo", "Pulau Breueh": "Breuh", "Pulau Brueh": "Breuh", "Pulau Nasi Besar": "Nasi",
+    "Pulau Nasi Kecil": "Teunom", "Teunom": "Teunom", "Pulau Bunta": "Bunta", "Pulau Tuandipait": "Tuan Diapit",
+    "Pulau Ue": "U", "Pulau Geupon": "Geupon", "Pualu Sidom Satu": "Sidom", "Pualu Sidom Dua": "Sidom",
+    "Pulau Jroh": "Jroeng", "Pulau Tangkorak": "Tangkora",
+}
+
+# Warna pulau: pulau besar berbeda warna, pulau kecil memakai warna muda wilayahnya
+PULAU_COLORS = {"Weh": "#2a78d6", "Breuh": "#eb6834", "Nasi": "#1baf7a", "Teunom": "#6250d6"}
+PULAU_SMALL_COLORS = {WILAYAH_SABANG: "#7fb2ea", WILAYAH_PULO_ACEH: "#f2a882"}
+
+
+def pulau_color(pulau):
+    if pulau in PULAU_COLORS:
+        return PULAU_COLORS[pulau]
+    wil = PULAU_KAWASAN.get(pulau, (WILAYAH_PULO_ACEH, ""))[0]
+    return PULAU_SMALL_COLORS[wil]
 
 # Basemap gallery. Rupabumi Indonesia (BIG) adalah basemap default di web map asli.
 BASEMAPS = {
@@ -69,6 +119,7 @@ DESA_FIELDS = {
     "KDEPUM": "Kode Desa (PUM)",
     "KDCPUM": "Kode Kecamatan (PUM)",
     "LUASWH": "Luas (ha)",
+    "PULAU": "Pulau",
     "UUPP": "Sumber",
     "SRS_ID": "SRS",
 }
@@ -284,6 +335,7 @@ FIELD_ALIASES = {
     "JGLGRL": "Jenis Gardu", "JNSPLS": "Jenis Pembangkit", "JNSSTK": "Jenis Sarana Telkom", "KAPSTS": "Kapasitas", "DEBIT": "Debit",
     "JNSALR": "Jenis Saluran", "JPLTPL": "Jenis Pengolahan", "TIPRST": "Tipe Rumah Sakit", "JPLYRS": "Jenis Layanan",
     "WADMKC": "Kecamatan", "WADMKK": "Kab/Kota", "WADMPR": "Provinsi", "WADMKD": "Desa/Kelurahan", "LUASWH": "Luas Wilayah (ha)",
+    "PULAU": "Pulau", "WILAYAH": "Wilayah Kawasan Sabang",
     "objectid": "OBJECTID", "shape_leng": "Panjang (m)", "luas_ha": "Luas (ha)", "created_by": "Sumber/Editor",
     "created_at": "Dibuat", "updated_at": "Diubah",
 }
@@ -293,7 +345,7 @@ AUTO_FIELDS = {"FCODE", "LCODE", "METADATA", "SRS_ID", "AQDATE", "PUDATE", "KODL
                "fcode", "metadata", "srs_id", "utilitas"}
 
 # Field sistem yang ditambahkan aplikasi ini ke setiap fitur
-SYSTEM_FIELDS = ["objectid", "shape_leng", "luas_ha", "created_by", "created_at", "updated_at"]
+SYSTEM_FIELDS = ["objectid", "PULAU", "WILAYAH", "shape_leng", "luas_ha", "created_by", "created_at", "updated_at"]
 
 # Ikon titik (Font Awesome 6.2 Free, gaya solid) per nama dasar KUGI; lainnya memakai ikon tema
 LAYER_ICONS = {

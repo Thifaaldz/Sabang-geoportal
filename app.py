@@ -1,7 +1,8 @@
 """Geoportal Sabang — Peta Interaktif Utilitas (Streamlit).
 
 Replika fungsional aplikasi Web AppBuilder "Geoportal BP Batam - Peta Interaktif Utilitas"
-dengan data RBI 1:50.000 Kota Sabang (141 layer KUGI) + batas desa, dan pengguna dapat
+dengan data RBI 1:50.000 Kawasan Sabang (Kota Sabang + pulau-pulau Pulo Aceh, Kab. Aceh Besar; 141 layer KUGI)
++ batas desa, dapat difilter/diwarnai per wilayah & pulau, dan pengguna dapat
 menambah/mengedit fitur titik, garis, maupun area.
 
 Persiapan data (sekali, atau setelah shapefile diperbarui):  python convert_rbi.py
@@ -22,11 +23,12 @@ from jinja2 import Template
 from shapely.geometry import mapping, shape
 from streamlit_folium import st_folium
 
+import config
 import store
 from config import (
     APP_SUBTITLE, APP_TITLE, BASEMAPS, CATALOG_PATH, DEFAULT_VISIBLE, DESA_FIELDS, FIELD_ALIASES, GEOM_LABEL,
-    HOME_BOUNDS, HOME_CENTER, HOME_ZOOM, KECAMATAN_COLORS, OTHER_COLOR, RBI_SOURCE, SELECTION_COLOR,
-    THEME_ACCENT, THEME_BG,
+    HOME_BOUNDS, HOME_CENTER, HOME_ZOOM, KECAMATAN_COLORS, OTHER_COLOR, PULAU_KAWASAN, RBI_SOURCE, SELECTION_COLOR,
+    THEME_ACCENT, THEME_BG, WILAYAH_COLORS, WILAYAH_PULO_ACEH, WILAYAH_SABANG, pulau_color,
 )
 
 st.set_page_config(page_title=f"{APP_TITLE} — {APP_SUBTITLE}", page_icon="🗺️", layout="wide")
@@ -36,6 +38,16 @@ UPLOAD_COLOR = "#6250d6"
 OPERATORS = ["=", "≠", "mengandung", ">", "<"]
 GEOM_ICON = {"Point": "●", "LineString": "━", "Polygon": "■"}
 DISPLAY_TOLERANCE = 0.00002  # ±2 m; hanya untuk tampilan peta, data asli tidak diubah
+PULAU_ID = "PULAU_KAWASAN"
+ALL_PULAU = list(PULAU_KAWASAN)
+WILAYAH_OPTIONS = {  # pilihan cepat wilayah → daftar pulau
+    "Seluruh Kawasan Sabang": ALL_PULAU,
+    WILAYAH_SABANG: [p for p, (w, _) in PULAU_KAWASAN.items() if w == WILAYAH_SABANG],
+    WILAYAH_PULO_ACEH: [p for p, (w, _) in PULAU_KAWASAN.items() if w == WILAYAH_PULO_ACEH],
+    **{(p if p.startswith("Pulau") else f"Pulau {p}") + f" · {w}": [p] for p, (w, _) in PULAU_KAWASAN.items()},
+    "Pilih beberapa pulau…": None,
+}
+COLOR_MODES = ["Per layer", "Per wilayah", "Per pulau"]
 
 # Kategori fasilitas untuk dashboard (urutan & warna tervalidasi; warna = simbol di peta)
 FACILITY_GROUPS = {
@@ -88,6 +100,11 @@ def _desa():
     return store.load_desa()
 
 
+@st.cache_resource
+def _pulau(mtime):
+    return store.load_pulau()
+
+
 @st.cache_resource(max_entries=400)
 def _layer(layer_id, mtime):
     return store.load_layer(layer_id)
@@ -118,6 +135,7 @@ if not CATALOG_PATH.exists():
 
 CAT = _catalog(CATALOG_PATH.stat().st_mtime)
 desa_fc = _desa()
+pulau_fc = _pulau(store.PULAU_PATH.stat().st_mtime if store.PULAU_PATH.exists() else 0.0)
 
 
 def feats(lid):
@@ -146,7 +164,9 @@ def init_state():
     ss.setdefault("nav_n", 0)
     ss.setdefault("filters", [])
     ss.setdefault("uploads", [])
-    ss.setdefault("visible", {DESA_ID: True, "LABEL": True, **{lid: lid in DEFAULT_VISIBLE for lid in CAT}})
+    ss.setdefault("pulau", ALL_PULAU)  # filter Kawasan Sabang: pulau yang ditampilkan
+    ss.setdefault("color_mode", COLOR_MODES[0])
+    ss.setdefault("visible", {DESA_ID: True, "LABEL": True, PULAU_ID: True, **{lid: lid in DEFAULT_VISIBLE for lid in CAT}})
     ss.setdefault("opacity", {DESA_ID: 0.2, "AREA": 0.45})
     ss.setdefault("selected_desa", [])
     ss.setdefault("highlight", None)  # (layer_id, objectid)
@@ -180,7 +200,24 @@ def reset_map(focus_bounds=None):
     ss.map_ver += 1
 
 
+def in_kawasan(features):
+    """Fitur pada pulau yang dipilih di filter Kawasan Sabang."""
+    if len(ss.pulau) == len(ALL_PULAU):
+        return features
+    keep = set(ss.pulau)
+    return [f for f in features if f["properties"].get("PULAU") in keep]
+
+
+def feature_color(props, default):
+    if ss.color_mode == "Per wilayah":
+        return WILAYAH_COLORS.get(props.get("WILAYAH"), OTHER_COLOR)
+    if ss.color_mode == "Per pulau":
+        return pulau_color(props["PULAU"]) if props.get("PULAU") else OTHER_COLOR
+    return default
+
+
 def apply_filters(layer_id, features):
+    features = in_kawasan(features)
     for flt in ss.filters:
         if flt["layer"] != layer_id:
             continue
@@ -271,6 +308,22 @@ st.markdown(
 
 # ============================================================ SIDEBAR (panel widget)
 with st.sidebar:
+    st.markdown("#### Kawasan Sabang")
+    cur = next((k for k, v in WILAYAH_OPTIONS.items() if v == ss.pulau), "Pilih beberapa pulau…")
+    wil = st.selectbox("Wilayah / pulau", list(WILAYAH_OPTIONS), index=list(WILAYAH_OPTIONS).index(cur), key="wilayah",
+                       help="PP 83/2010: Kota Sabang + pulau-pulau Pulo Aceh (Kab. Aceh Besar). Berlaku untuk peta, tabel, dan dashboard.")
+    if wil == "Pilih beberapa pulau…":
+        chosen = st.multiselect("Pulau", ALL_PULAU, default=ss.pulau, key="pilih_pulau",
+                                format_func=lambda p: f"{p} — {PULAU_KAWASAN[p][0]}")
+        chosen = [p for p in ALL_PULAU if p in chosen]
+    else:
+        chosen = WILAYAH_OPTIONS[wil]
+    if chosen != ss.pulau:
+        ss.pulau = chosen
+        zoom_to(store.fc_bounds([f for f in pulau_fc["features"] if f["properties"]["PULAU"] in chosen]))
+    ss.color_mode = st.radio("Warna fitur", COLOR_MODES, index=COLOR_MODES.index(ss.color_mode), horizontal=True, key="color_mode_r",
+                             help="Per wilayah: Kota Sabang vs Pulo Aceh · Per pulau: tiap pulau besar berbeda warna")
+    st.divider()
     st.markdown("#### Panel Widget")
     t_layer, t_add, t_filter, t_select, t_upload = st.tabs(["Layer", "Tambah", "Filter", "Pilih", "Unggah"])
 
@@ -279,6 +332,7 @@ with st.sidebar:
         st.caption("Basemap: pilih lewat ikon layer di pojok kanan atas peta")
         show_empty = st.toggle("Tampilkan layer kosong", value=False,
                                help="109 layer RBI belum berisi data — tersedia sebagai tujuan 'Tambah' data baru")
+        ss.visible[PULAU_ID] = st.checkbox(f"Pulau Kawasan Sabang ({len(pulau_fc['features'])})", value=ss.visible[PULAU_ID], key="vis_pulau")
         c1, c2 = st.columns(2)
         ss.visible[DESA_ID] = c1.checkbox("Batas desa", value=ss.visible[DESA_ID], key="vis_desa")
         ss.visible["LABEL"] = c2.checkbox("Label desa", value=ss.visible["LABEL"], key="vis_label")
@@ -296,11 +350,20 @@ with st.sidebar:
             ss.opacity["AREA"] = st.slider("Isi layer area", 0.0, 1.0, ss.opacity["AREA"], 0.05)
 
         st.caption("Legenda")
-        rows = [f'<div class="legend-row">{legend_symbol("Polygon", col)}Kec. {kec}</div>' for kec, col in KECAMATAN_COLORS.items()]
-        rows.append(f'<div class="legend-row">{legend_symbol("Polygon", OTHER_COLOR)}Di luar Kota Sabang</div>')
+        rows = []
+        if ss.color_mode == "Per wilayah" or (ss.visible[PULAU_ID] and ss.color_mode == "Per layer"):
+            rows += [f'<div class="legend-row">{legend_symbol("Polygon", col)}{w}</div>' for w, col in WILAYAH_COLORS.items()]
+        elif ss.color_mode == "Per pulau":
+            small = {w: [p for p in ss.pulau if PULAU_KAWASAN[p][0] == w and p not in config.PULAU_COLORS] for w in WILAYAH_COLORS}
+            rows += [f'<div class="legend-row">{legend_symbol("Polygon", pulau_color(p))}P. {p}</div>' for p in ss.pulau if p in config.PULAU_COLORS]
+            rows += [f'<div class="legend-row">{legend_symbol("Polygon", config.PULAU_SMALL_COLORS[w])}Pulau kecil {w}</div>' for w, ps in small.items() if ps]
+        if ss.visible[DESA_ID]:
+            rows += [f'<div class="legend-row">{legend_symbol("Polygon", col)}Desa · Kec. {kec}</div>' for kec, col in KECAMATAN_COLORS.items()]
+            rows.append(f'<div class="legend-row">{legend_symbol("Polygon", OTHER_COLOR)}Desa · Kec. Pulo Aceh</div>')
         for lid, c in CAT.items():
             if ss.visible[lid] and COUNTS[lid]:
-                rows.append(f'<div class="legend-row">{legend_symbol(c["geom"], c["color"], c["width"], c.get("icon"))}{c["title"]}</div>')
+                col = c["color"] if ss.color_mode == "Per layer" else "#52514e"
+                rows.append(f'<div class="legend-row">{legend_symbol(c["geom"], col, c["width"], c.get("icon"))}{c["title"]}</div>')
         if ss.uploads:
             rows.append(f'<div class="legend-row">{legend_symbol("LineString", UPLOAD_COLOR)}Data unggahan (sementara)</div>')
         st.markdown("".join(rows), unsafe_allow_html=True)
@@ -371,6 +434,7 @@ with st.sidebar:
     # ---- Filter
     with t_filter:
         st.markdown("**Filter atribut**")
+        st.caption("Filter wilayah/pulau ada di bagian **Kawasan Sabang** di atas; filter di sini menambah syarat atribut.")
         options = [DESA_ID] + [lid for lid in CAT if COUNTS[lid]]
         f_layer = st.selectbox("Layer", options, format_func=layer_title, key="f_layer")
         f_field = st.selectbox("Field", layer_fields(f_layer), key="f_field",
@@ -466,7 +530,7 @@ with st.sidebar:
 
 # ================================================================== MAP
 class HomeButton(MacroElement):
-    """Widget HomeButton: kembali ke extent awal Kota Sabang."""
+    """Widget HomeButton: kembali ke extent awal Kawasan Sabang."""
 
     _template = Template("""
         {% macro script(this, kwargs) %}
@@ -541,38 +605,58 @@ def layer_group(lid, features):
 
     def style(feat, c=c, lid=lid):
         on = hl and hl[0] == lid and feat["properties"].get("objectid") == hl[1]
-        col = SELECTION_COLOR if on else c["color"]
+        col = SELECTION_COLOR if on else feature_color(feat["properties"], c["color"])
         if c["geom"] == "LineString":
             return {"color": col, "weight": c["width"] + (3 if on else 0)}
         return {"color": col, "weight": 3 if on else 1, "fillColor": col, "fillOpacity": ss.opacity["AREA"]}
 
     fg = folium.FeatureGroup(name=c["title"])
     is_point = c["geom"] == "Point"
-    marker = None
-    if is_point:
-        size = 16 if c["base"] in SMALL_ICON_LAYERS else 24
-        marker = folium.Marker(icon=folium.DivIcon(html=icon_html(c["icon"], c["color"], size), class_name="sbg-icon",
-                                                   icon_size=(size, size), icon_anchor=(size // 2, size // 2)))
-        # cincin sorotan untuk fitur yang dipilih dari tabel atribut
-        if hl and hl[0] == lid:
-            for f in features:
-                if f["properties"].get("objectid") == hl[1]:
-                    lon, lat = shape(f["geometry"]).representative_point().coords[0]
-                    folium.CircleMarker([lat, lon], radius=18, color=SELECTION_COLOR, weight=4, fill=False).add_to(fg)
-    folium.GeoJson(
-        {"type": "FeatureCollection", "features": features},
-        style_function=style,
-        highlight_function=None if is_point else (lambda f: {"weight": 5, "color": SELECTION_COLOR}),
-        marker=marker,
-        tooltip=folium.GeoJsonTooltip([label], aliases=[c["title"]]),
-        popup=folium.GeoJsonPopup(popup_fields, aliases=[FIELD_ALIASES.get(f, f) for f in popup_fields], max_width=380),
-    ).add_to(fg)
+    size = 16 if c["base"] in SMALL_ICON_LAYERS else 24
+    # cincin sorotan untuk fitur yang dipilih dari tabel atribut
+    if is_point and hl and hl[0] == lid:
+        for f in features:
+            if f["properties"].get("objectid") == hl[1]:
+                lon, lat = shape(f["geometry"]).representative_point().coords[0]
+                folium.CircleMarker([lat, lon], radius=18, color=SELECTION_COLOR, weight=4, fill=False).add_to(fg)
+    # ikon titik tetap memakai glyph layer; warnanya per wilayah/pulau → satu GeoJson per warna
+    by_color = {}
+    for f in features:
+        by_color.setdefault(feature_color(f["properties"], c["color"]) if is_point else None, []).append(f)
+    for col, group in by_color.items():
+        marker = folium.Marker(icon=folium.DivIcon(html=icon_html(c["icon"], col, size), class_name="sbg-icon",
+                                                   icon_size=(size, size), icon_anchor=(size // 2, size // 2))) if is_point else None
+        folium.GeoJson(
+            {"type": "FeatureCollection", "features": group},
+            style_function=style,
+            highlight_function=None if is_point else (lambda f: {"weight": 5, "color": SELECTION_COLOR}),
+            marker=marker,
+            tooltip=folium.GeoJsonTooltip([label], aliases=[c["title"]]),
+            popup=folium.GeoJsonPopup(popup_fields, aliases=[FIELD_ALIASES.get(f, f) for f in popup_fields], max_width=380),
+        ).add_to(fg)
     return fg
+
+
+def pulau_style(feat):
+    col = feature_color(feat["properties"], WILAYAH_COLORS[feat["properties"]["WILAYAH"]])
+    return {"color": col, "weight": 2, "dashArray": "5 4", "fillColor": col, "fillOpacity": 0.08}
 
 
 def build_overlays():
     """Layer operasional sebagai FeatureGroup; st_folium memperbaruinya tanpa memuat ulang peta."""
     groups = []
+    if ss.visible[PULAU_ID]:
+        pfeats = in_kawasan(pulau_fc["features"])
+        if pfeats:
+            fg = folium.FeatureGroup(name="Pulau Kawasan Sabang")
+            folium.GeoJson(
+                {"type": "FeatureCollection", "features": pfeats},
+                style_function=pulau_style,
+                tooltip=folium.GeoJsonTooltip(["PULAU", "WILAYAH"], aliases=["Pulau", "Wilayah"]),
+                popup=folium.GeoJsonPopup(["PULAU", "WILAYAH", "KABKOTA", "luas_ha", "CATATAN"],
+                                          aliases=["Pulau", "Wilayah", "Kab/Kota", "Luas (ha)", "Catatan"], max_width=360),
+            ).add_to(fg)
+            groups.append(fg)
     if ss.visible[DESA_ID]:
         dfeats = apply_filters(DESA_ID, desa_fc["features"])
         if dfeats:
@@ -593,7 +677,7 @@ def build_overlays():
                     groups.append(layer_group(lid, fl))
     if ss.visible[DESA_ID] and ss.visible["LABEL"]:
         fg = folium.FeatureGroup(name="Label Desa")
-        for f in desa_fc["features"]:
+        for f in in_kawasan(desa_fc["features"]):
             pt = shape(f["geometry"]).representative_point()
             folium.Marker(
                 [pt.y, pt.x],
@@ -680,7 +764,7 @@ with tab_map:
                 info += f" · total {df['luas_ha'].sum():,.1f} ha"
             st.caption(info + " · sel dapat diedit langsung")
             edited = st.data_editor(df, hide_index=True, width="stretch", column_config=col_cfg, height=320,
-                                    disabled=[x for x in cols if x in ("objectid", "shape_leng", "luas_ha", "created_by", "created_at", "updated_at")],
+                                    disabled=[x for x in cols if x in ("objectid", "PULAU", "WILAYAH", "shape_leng", "luas_ha", "created_by", "created_at", "updated_at")],
                                     key=f"ed_{tl}_{store.layer_mtime(tl)}")
             c1, c2, c3, c4 = st.columns([1.2, 1.4, 1, 1])
             if c1.button("💾 Simpan perubahan", key=f"save_{tl}", type="primary"):
@@ -713,7 +797,7 @@ def bar_layout(fig, height, legend=True):
 
 
 with tab_analysis:
-    only_sabang = st.toggle("Hanya wilayah Kota Sabang (kecualikan Desa Melingge, Kec. Pulo Aceh, Kab. Aceh Besar)", value=True)
+    only_sabang = st.toggle("Analisis per desa: hanya Kota Sabang (kecualikan Desa Melingge, Kec. Pulo Aceh, Kab. Aceh Besar)", value=True)
     dfeats = [f for f in desa_fc["features"] if not only_sabang or f["properties"]["WADMKK"] == "Kota Sabang"]
     ddf = pd.DataFrame([f["properties"] for f in dfeats])
     ddf["Luas geodesik (ha)"] = [round(store.geodesic_area_ha(shape(f["geometry"])), 2) for f in dfeats]
@@ -727,6 +811,53 @@ with tab_analysis:
     kpi(c[3], f"{sum(COUNTS.values()):,}", "Total fitur")
     kpi(c[4], f"{n_user}", "Fitur tambahan pengguna")
     st.write("")
+
+    # ---- Kawasan Sabang per pulau (mengikuti filter Kawasan Sabang di sidebar)
+    st.markdown("#### Kawasan Sabang per pulau")
+    st.caption(f"Filter wilayah: **{ss.get('wilayah', 'Seluruh Kawasan Sabang')}** ({len(ss.pulau)} pulau). "
+               "Data Aceh Besar hanya diambil pada pulau-pulau Pulo Aceh yang termasuk Kawasan Sabang (PP 83/2010).")
+    prow = {f["properties"]["PULAU"]: {"Pulau": f["properties"]["PULAU"], "Wilayah": f["properties"]["WILAYAH"],
+                                       "Luas (ha)": f["properties"]["luas_ha"]} for f in in_kawasan(pulau_fc["features"])}
+    pfac = []
+    for group, (lids, _) in FACILITY_GROUPS.items():
+        for lid in lids:
+            for f in in_kawasan(feats(lid)) if lid in CAT else []:
+                pfac.append({"Pulau": f["properties"].get("PULAU"), "Kategori": group})
+    for r in prow.values():
+        r["Fasilitas umum"] = sum(1 for x in pfac if x["Pulau"] == r["Pulau"])
+        r["Jalan (km)"] = round(sum(f["properties"].get("shape_leng") or 0 for f in feats("JALAN_LN_50K")
+                                    if f["properties"].get("PULAU") == r["Pulau"]) / 1000, 2) if "JALAN_LN_50K" in CAT else None
+        r["Permukiman (ha)"] = round(sum(f["properties"].get("luas_ha") or 0 for f in feats("PEMUKIMAN_AR_50K")
+                                         if f["properties"].get("PULAU") == r["Pulau"]), 1) if "PEMUKIMAN_AR_50K" in CAT else None
+        r["Catatan"] = PULAU_KAWASAN[r["Pulau"]][1]
+    pdf = pd.DataFrame(list(prow.values()))
+    if pdf.empty:
+        st.caption("Tidak ada pulau dipilih.")
+    else:
+        a, b = st.columns([2, 3])
+        with a:
+            wsum = pdf.groupby("Wilayah", as_index=False)[["Luas (ha)", "Fasilitas umum", "Jalan (km)", "Permukiman (ha)"]].sum()
+            fig = px.bar(wsum, x="Luas (ha)", y="Wilayah", orientation="h", color="Wilayah", color_discrete_map=WILAYAH_COLORS,
+                         text="Luas (ha)", labels={"Wilayah": ""})
+            fig.update_traces(texttemplate="%{text:,.0f} ha", textposition="outside", cliponaxis=False)
+            st.plotly_chart(bar_layout(fig, 160, legend=False), width="stretch")
+            st.dataframe(wsum.round(1), hide_index=True, width="stretch")
+        with b:
+            fdf = pd.DataFrame(pfac, columns=["Pulau", "Kategori"]).value_counts().rename("jumlah").reset_index()
+            if fdf.empty:
+                st.caption("Tidak ada fasilitas umum tercatat pada pulau terpilih.")
+            else:
+                fig = px.bar(fdf, x="jumlah", y="Pulau", color="Kategori", orientation="h",
+                             color_discrete_map={k: v[1] for k, v in FACILITY_GROUPS.items()},
+                             category_orders={"Kategori": list(FACILITY_GROUPS)}, labels={"jumlah": "Jumlah fasilitas", "Pulau": ""})
+                st.plotly_chart(bar_layout(fig, 260), width="stretch")
+        st.dataframe(pdf, hide_index=True, width="stretch",
+                     column_config={"Luas (ha)": st.column_config.NumberColumn(format="%.1f")})
+
+    st.divider()
+    st.markdown("#### Analisis per desa")
+    st.caption("Batas desa hanya tersedia untuk Kota Sabang (18 desa) + Desa Melingge (Pulo Aceh); "
+               "pulau-pulau Pulo Aceh lainnya belum memiliki poligon batas desa.")
 
     # ---- wilayah
     kec_colors = {**KECAMATAN_COLORS, "Pulo Aceh": OTHER_COLOR}

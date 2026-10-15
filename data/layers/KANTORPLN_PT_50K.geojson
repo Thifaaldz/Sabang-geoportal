@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","name":"KANTORPLN_PT_50K","features":[]}
+{"type":"FeatureCollection","name":"KANTORPLN_PT_50K","features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[95.171574,5.608166]},"properties":{"NAMOBJ":"Kantor PLN Deudap","FCODE":null,"REMARK":"Kantor PLN","SRS_ID":null,"LCODE":"HB0080","METADATA":null,"objectid":1,"PULAU":"Nasi","WILAYAH":"Pulo Aceh (Aceh Besar)","created_by":"RBI 1:50.000 (BIG)","created_at":null,"updated_at":null}}]}
