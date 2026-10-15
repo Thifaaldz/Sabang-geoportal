@@ -96,8 +96,13 @@ def _catalog(mtime):
 
 
 @st.cache_resource
-def _desa():
+def _desa(mtimes):
+    # kunci = mtime sabang.geojson + pulau.geojson: atribut PULAU desa ikut diperbarui saat data berubah
     return store.load_desa()
+
+
+def _mtime(path):
+    return path.stat().st_mtime if path.exists() else 0.0
 
 
 @st.cache_resource
@@ -124,7 +129,7 @@ def _display(layer_id, mtime):
 
 @st.cache_resource(max_entries=400)
 def _overlay(layer_id, mtime, only_sabang):
-    desa = _desa()
+    desa = desa_fc
     sub = {"features": [f for f in desa["features"] if not only_sabang or f["properties"]["WADMKK"] == "Kota Sabang"]}
     return store.overlay_by_desa(sub, CAT[layer_id], _layer(layer_id, mtime)["features"])
 
@@ -134,8 +139,8 @@ if not CATALOG_PATH.exists():
     st.stop()
 
 CAT = _catalog(CATALOG_PATH.stat().st_mtime)
-desa_fc = _desa()
-pulau_fc = _pulau(store.PULAU_PATH.stat().st_mtime if store.PULAU_PATH.exists() else 0.0)
+desa_fc = _desa((_mtime(store.DESA_PATH), _mtime(store.PULAU_PATH)))
+pulau_fc = _pulau(_mtime(store.PULAU_PATH))
 
 
 def feats(lid):
